@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+:root {
+    --bg-color: #101317;
+    --second-bg-color: #192036;
+    --text-color: #fff;
+    --main-color: rgb(255, 34, 0);
+}
+
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #050505;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+.navbar .logo {
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.logo a {
+    color: #fff; /* or color: white; */
+  }
+  
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: var(--text-color);
+    padding: 10px 15px;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+
+/* Paragraph Section Styling */
+.paragraph {
+    text-align: center;
+    padding: 20px;
+}
+
+.paragraph h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000000;
+    
+}
+
+
+
+/* Banner Styles */
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 50vh; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.banner-text h1 {
+    font-size: 3rem; /* Adjust font size as needed */
+    margin: 0;
+}
+
+.banner-text p {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    margin: 0.5rem 0;
+}
+
+.banner-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+.banner-button:hover {
+    background-color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .banner-text h1 {
+        font-size: 2rem;
+    }
+
+    .banner-text p {
+        font-size: 1rem;
+    }
+
+    .banner-button {
+        font-size: 0.875rem;
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+
+/* navbar2 */
+.navbar2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1ebeb;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    color: black;  
+    font-size: 24px;
+    font-weight: bold;
+    /* Center the navbar within its container */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar2 ul {
+    list-style: none;
+    display: flex;
+    gap: 80px;  
+    justify-content: center; /* Center the list items */
+}
+
+.navbar2 ul li {
+    margin-left: 0;  
+}
+
+.navbar2 ul li a {
+    color: black;  
+    padding: 10px 15px;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar2 ul li a:hover {
+    color: var(--main-color);  
+    border-bottom: 3px solid var(--main-color);
+}
+
+/* Card Section Styling */
+.clothing-store {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px var(--main-color);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-content h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.card-content p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.card-content button {
+    background-color: #f7f3f3;
+    color: #070707;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.card-content button:hover {
+    background-color: #f51111;
+    box-shadow: 0 4px 10px var(--bg-color);
+}
+
+/* Poster Section Styling */
+/* Add this to your existing CSS */
+.poster {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 40px); /* Adjust height to leave space for footer */
+    padding-bottom: 20px; /* Adjust the value as needed */
+    background-color: #f4f4f4;
+}
+
+/* Other styles remain unchanged */
+
+.poster {
+    display: flex;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.content {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.content p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+}
+
+.image {
+    flex: 1;
+    overflow: hidden;
+}
+
+
+.image img {
+    width: 100%; /* Adjust the width to fill the container */
+    height: 100%; /* Adjust the height to fill the container */
+    display: block; /* Add this to ensure the image is displayed */
+    object-fit: cover; /* Add this to ensure the image covers the entire container */
+
+}
+
+
+/* banner 2 */
+
+
+.poster2 {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.poster2 {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.media2 {
+    flex: 1;
+    overflow: hidden;
+}
+
+.media2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content2 {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content2 h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.content2 p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Footer Section Styling */
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: rgba(238, 222, 78, 0.363);
+}
+
+.footer .social-media {
+    text-align: center;
+    padding-bottom: 25px;
+    color: rgb(238, 6, 6);
+}
+
+.footer .social-media a {
+    font-size: 24px;
+    color: var(--bg-color);
+    border: 2px solid var(--text-color);
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color);
+    transition: 0.3s ease;
+}
+
+.footer .social-media a:hover {
+    transform: scale(1.2) translateY(-10px);
+    color: var(--main-color);
+    border: 2px solid var(--bg-color);
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li a {
+    color: rgb(0, 0, 0);
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.footer ul li a:hover {
+    border-bottom: 3px solid var(--main-color);
+}
+
+.footer .contact-info {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 16px;
+    color: var(--bg-color);
+}
+
+.footer .contact-info li {
+    list-style: none;
+    margin: 5px 0;
+}
+
+.footer .subscribe {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 14px;
+    color: var(--bg-color);
+}
+
+.footer .Secure-Payments {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 14px;
+    color: var(--bg-color);
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--bg-color);
+}
